@@ -1,0 +1,18 @@
+
+
+Graph_method:
+entryNode: entry
+node2: while(true)
+node3: intstatement1InWhile=0
+node4: intstatement2InWhile=0
+node6: while(true2)
+node7: intstatement1InWhile2=0
+node8: intstatement2InWhile2=0
+node10: while(true3)
+node11: intstatement1InWhile3=0
+node12: intstatement2InWhile3=0
+node14: while(thisIsSecondOuterWhile)
+node15: intstatement1InSecondOuterWhile=0
+node16: intstatement2InSecondOuterWhile=0
+node17: intout=0
+exitNode: exit

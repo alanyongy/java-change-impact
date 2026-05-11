@@ -1,0 +1,25 @@
+
+
+Graph_method:
+entryNode: entry
+node1: intvar=0.1
+node2: intvar=0.2
+node4: while(whileCondition1)
+node5: intvar=2
+node6: intvar=3
+node8: intx=4
+node10: caseconditionVar5==6
+node11: x=7
+node12: break
+node13: caseconditionVar5==8
+node14: x=9
+node15: x=10
+node17: while(whilecond10)
+node18: intx=10.2
+node19: return
+node20: continue
+node22: while(whilecond11)
+node25: if(cond12)
+node27: while(condend)
+node28: intx=2
+exitNode: exit

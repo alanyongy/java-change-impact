@@ -1,0 +1,57 @@
+
+CFG doWhileWithBreak:    
+node entryNode:entry edge  node1;     
+node node1:intx=0 edge  node2;     
+node node2:x+=2 edge  node3;     
+node node3:break edge  exitNode;     
+node node4:while(true) edge true node2; edge false exitNode;     
+node exitNode:exit 
+
+CFG whileWithContinue:    
+node entryNode:entry edge  node1;     
+node node1:intx=0 edge  node2;     
+node node2:intcount_evens=0 edge  node3;     
+node node3:while(x<100) edge false exitNode; edge true node4;     
+node node4:x++ edge  node5;     
+node node5:if(x%2==1) edge false node6;     
+node node6:count_evens++ edge  node3;     
+node exitNode:exit 
+
+CFG SwitchWithReturn:    
+node entryNode:entry edge  node1;     
+node node1:intswitchCondition=0 edge  node2;     
+node node2:caseswitchCondition==1 edge true node3; edge false node4;     
+node node3:return2 edge  node5;     
+node node4:caseswitchCondition==3 edge true node5; edge false node6;     
+node node5:booleant=true edge  node6;     
+node node6:intx=0 edge  node7;     
+node node7:returnswitchCondition edge  exitNode;     
+node exitNode:exit 
+
+CFG IfWithThrow:    
+node entryNode:entry edge  node1;     
+node node1:intx=0 edge  node2;     
+node node2:if(x==1) edge false node3;     
+node node3:x=2 edge  exitNode;     
+node exitNode:exit 
+
+CFG ForWithIfWithAll:    
+node entryNode:entry edge  node1;     
+node node1:forInit(intx=1) edge  node2;     
+node node2:forCondition(x<2) edge false exitNode; edge true node3;     
+node node3:if(x==3) edge true node4; edge false node6;     
+node node4:elseif(x==5) edge true node5;     
+node node5:elseif(x==7) edge  node6;     
+node node6:if(x==5){x=6;break;}elseif(x==7){x=8;thrownewIllegalArgumentException();}else{x=9;continue;} edge  node7;     
+node node7:(x==5) edge  node8;     
+node node8:x=6 edge  node9;     
+node node9:break edge  exitNode;     
+node node10:if(x==7){x=8;thrownewIllegalArgumentException();}else{x=9;continue;} edge  node11;     
+node node11:(x==7) edge  node12;     
+node node12:x=8 edge  node13;     
+node node13:throw(newIllegalArgumentException()) edge  exitNode;     
+node node14:x=9 edge  node15;     
+node node15:continue edge  node1;     
+node node16:forUpdate(x+=9) edge  node2;     
+node exitNode:exit 
+

@@ -1,0 +1,25 @@
+
+
+Graph_method1:
+entryNode: entry
+node2: while(cond1)
+node3: intvar=2
+node4: intvar=3
+node5: intvar=4
+exitNode: exit
+
+Graph_method2:
+entryNode: entry
+node2: while(cond5)
+node3: intvar=6
+node4: intvar=7
+node5: intvar=8
+exitNode: exit
+
+Graph_method3:
+entryNode: entry
+node2: while(cond9)
+node3: intvar=10
+node4: intvar=11
+node5: intvar=12
+exitNode: exit

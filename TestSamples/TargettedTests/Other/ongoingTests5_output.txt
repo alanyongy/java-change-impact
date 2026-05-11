@@ -1,0 +1,14 @@
+
+
+Graph_method:
+entryNode: entry
+node2: while(whileCondition1)
+node3: intvar2=2
+node4: intvar3=3
+node7: while(whilecond4)
+node8: intvar2=5
+node9: intvar3=6
+node11: while(whilecond7)
+node14: if(cond8)
+node15: intout=9
+exitNode: exit

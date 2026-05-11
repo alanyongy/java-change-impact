@@ -1,0 +1,18 @@
+
+
+Graph_method:
+entryNode: entry
+node2: caseconditionVar==1
+node3: x=1
+node4: break
+node5: caseconditionVar==2
+node6: x=2
+node7: break
+node8: x=3
+node9: break
+exitNode: exit
+
+Graph_method2:
+entryNode: entry
+node1: x=2
+exitNode: exit
