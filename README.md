@@ -39,7 +39,7 @@ The project demonstrates techniques commonly used in static analysis, compiler i
 
 ---
 
-# 🎯 Key Features
+### 🎯 Key Features
 - Parses Java source code using **ANTLR**
 - Constructs:
   - Control Flow Graphs (CFGs)
