@@ -64,19 +64,6 @@ The project demonstrates techniques commonly used in static analysis, compiler i
 
 # 🧠 Implementation Overview
 
-### Program Dependency Graph Construction
-The project centers around constructing a **Program Dependency Graph (PDG)** from Java source code.
-
-The PDG combines:
-- a **Control Dependency Graph (CDG)**
-- a **Data Dependency Graph (DDG)**
-
-Both are derived from a Control Flow Graph (CFG).
-
-![](writeup-assets/pdg-overview.png)
-
----
-
 ### Parsing Java Source Code with ANTLR
 Java source files are parsed using ANTLR-generated parsers and listeners.
 
@@ -91,6 +78,19 @@ Custom node hierarchies were built to represent:
 - control constructs
 - dependencies
 - graph relationships
+
+---
+
+### Program Dependency Graph Construction
+The project centers around constructing a **Program Dependency Graph (PDG)** from Java source code.
+
+The PDG combines:
+- a **Control Dependency Graph (CDG)**
+- a **Data Dependency Graph (DDG)**
+
+Both are derived from a Control Flow Graph (CFG).
+
+![](writeup-assets/pdg-overview.png)
 
 ---
 
