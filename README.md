@@ -64,7 +64,7 @@ The project demonstrates techniques commonly used in static analysis, compiler i
 
 # 🧠 Implementation Overview
 
-## Program Dependency Graph Construction
+### Program Dependency Graph Construction
 The project centers around constructing a **Program Dependency Graph (PDG)** from Java source code.
 
 The PDG combines:
@@ -77,7 +77,7 @@ Both are derived from a Control Flow Graph (CFG).
 
 ---
 
-## Parsing Java Source Code with ANTLR
+### Parsing Java Source Code with ANTLR
 Java source files are parsed using ANTLR-generated parsers and listeners.
 
 The parser:
@@ -94,7 +94,7 @@ Custom node hierarchies were built to represent:
 
 ---
 
-## Control Dependency Analysis (CDG)
+### Control Dependency Analysis (CDG)
 Control dependencies determine whether execution of one statement depends on another statement’s branching outcome.
 
 The algorithm:
@@ -122,7 +122,7 @@ Special handling was implemented for:
 
 ---
 
-## Data Dependency Analysis (DDG)
+### Data Dependency Analysis (DDG)
 Data dependencies determine whether one statement relies on values written by another statement.
 
 The DDG builder:
@@ -143,7 +143,7 @@ Unlike earlier attempts that reasoned about code sequentially, the final impleme
 
 ---
 
-## Recursive Change Impact Analysis
+### Recursive Change Impact Analysis
 Once the PDG is built, change impact analysis becomes a graph traversal problem.
 
 Given a selected line:
