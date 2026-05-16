@@ -489,7 +489,7 @@ A major part of the project became deciding:
 > 1. Clone the repository
 >
 > ```bash
-> git clone <repo-url>
+> git clone https://github.com/alanyongy/java-change-impact.git
 > ```
 >
 > 2. Open the project in your preferred Java IDE
