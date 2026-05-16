@@ -506,24 +506,22 @@ A major part of the project became deciding:
 >
 > ---
 >
-> ## Alternative: Compile Manually
->
-> If desired, the project can also be compiled and run as a standard Java program from the command line.
->
+> ## Alternative: Command Line Compilation
+> 
+> The project can also be compiled and run without an IDE using standard Java tooling, assuming all source files (including the generated ANTLR parser classes) are present.
+> 
+> From the project root directory:
+> 
 > ```bash
-> javac ...
-> java ...
+> javac -d out $(find . -name "*.java")
 > ```
->
-> ---
->
-> ## Notes
->
-> This project was developed primarily as a static analysis and dependency graph research/engineering project rather than a production-ready end-user tool.
->
-> The repository is intended mainly to showcase:
-> - PDG construction
-> - dependency analysis
+> 
+> Then run the main CLI entry point:
+> 
+> ```bash
+> java -cp out <main-class-name>
+> ```
+> Replace `<main-class-name>` with the fully qualified name of the program entry point (the class containing `main`).
 > - CFG/CDG/DDG generation
 > - recursive change propagation techniques
 >
