@@ -148,7 +148,7 @@ This allows the tool to detect:
 - control-based impacts
 - data-based impacts
 
-![](writeup-assets/impact-propagation.png)
+<img src="writeup-assets/impact-propogation.png" width="500"/>
 
 &nbsp;
 
