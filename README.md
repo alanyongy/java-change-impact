@@ -522,7 +522,4 @@ A major part of the project became deciding:
 > java -cp out <main-class-name>
 > ```
 > Replace `<main-class-name>` with the fully qualified name of the program entry point (the class containing `main`).
-> - CFG/CDG/DDG generation
-> - recursive change propagation techniques
->
 > </details>
