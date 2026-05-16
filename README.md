@@ -1,6 +1,8 @@
 # 🔍 Java Change Impact Analysis Tool (2025)
 
-A static analysis tool built in Java using ANTLR that performs **Change Impact Analysis (CIA)** by constructing a **Program Dependency Graph (PDG)** from source code and recursively performs change impact analysis through control and data dependency propagation.
+A static analysis tool for Java source code that identifies how changes to a single line of code propagate through a program by analyzing control and data dependencies.
+
+It constructs a Program Dependency Graph (PDG) from source code and uses it to compute all potentially affected lines when a change is made.
 
 ![](writeup-assets/cia-overview.png)
 
