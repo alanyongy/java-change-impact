@@ -2,7 +2,7 @@
 
 A static analysis tool built in Java using ANTLR that performs **Change Impact Analysis (CIA)** by constructing a **Program Dependency Graph (PDG)** from source code and recursively performs change impact analysis through control and data dependency propagation.
 
-![](writeup-assets/cia-preview.png)
+![](writeup-assets/cia-overview.png)
 
 ---
 
