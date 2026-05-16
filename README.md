@@ -81,7 +81,7 @@ The PDG combines:
 
 Both are derived from a Control Flow Graph (CFG).
 
-![](writeup-assets/pdg-preview.png)
+<img src="writeup-assets/pdg-preview.png" width="500"/>
 
 ---
 
