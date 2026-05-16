@@ -1,6 +1,6 @@
 # 🔍 Java Change Impact Analysis Tool (2025)
 
-A tool that analyzes Java source code and determines which parts of the program are impacted by a change to a specific line.
+A static analysis tool for Java source code that determines the impact of modifying a statement by analyzing control and data dependencies.
 
 A **Program Dependency Graph (PDG)** is constructed from source code, then change impact analysis is recursively performed through control and data dependency propagation.
 
