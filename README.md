@@ -1,7 +1,6 @@
 # 🔍 Java Change Impact Analysis Tool (2025)
 
-A static analysis tool built in Java using ANTLR that performs **Change Impact Analysis (CIA)** by constructing a **Program Dependency Graph (PDG)** from Java source code.  
-The tool identifies which lines of code may be affected when a specific line is modified by recursively traversing control and data dependencies.
+A static analysis tool built in Java using ANTLR that performs **Change Impact Analysis (CIA)** by constructing a **Program Dependency Graph (PDG)** from source code and recursively performs change impact analysis through control and data dependency propagation.
 
 ![](writeup-assets/cia-preview.png)
 
@@ -479,11 +478,13 @@ A major part of the project became deciding:
 >
 > ## Requirements
 > - Java
-> - ANTLR runtime
+> - An IDE capable of running Java projects (recommended)
 >
 > ---
 >
-> ## Usage
+> ## Running the Program
+>
+> The repository already includes the generated ANTLR parser files required to run the project.
 >
 > 1. Clone the repository
 >
@@ -491,20 +492,39 @@ A major part of the project became deciding:
 > git clone <repo-url>
 > ```
 >
-> 2. Build the project
+> 2. Open the project in your preferred Java IDE
+>    - IntelliJ IDEA recommended
+>    - Eclipse should also work
+>
+> 3. Run the main program file
+>
+> The application launches as a command-line interface (CLI) allowing you to:
+> - select a Java source file
+> - search for lines/statements
+> - perform change impact analysis
+> - view recursively impacted lines
+>
+> ---
+>
+> ## Alternative: Compile Manually
+>
+> If desired, the project can also be compiled and run as a standard Java program from the command line.
 >
 > ```bash
 > javac ...
-> ```
->
-> 3. Run the CLI
->
-> ```bash
 > java ...
 > ```
 >
-> 4. Provide a Java source file and select a target line for analysis
+> ---
 >
-> The tool will recursively display all impacted lines based on PDG traversal.
+> ## Notes
+>
+> This project was developed primarily as a static analysis and dependency graph research/engineering project rather than a production-ready end-user tool.
+>
+> The repository is intended mainly to showcase:
+> - PDG construction
+> - dependency analysis
+> - CFG/CDG/DDG generation
+> - recursive change propagation techniques
 >
 > </details>
